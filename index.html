@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha ID Lab</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    .fullscreen-image {
+      width: 100vw;
+      height: 100vh;
+      background-image: url('image.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Optional: better scaling on ultra-wide screens */
+    @media (min-aspect-ratio: 16/9) {
+      .fullscreen-image {
+        background-size: contain;
+        background-color: #000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fullscreen-image"></div>
+</body>
+</html>
